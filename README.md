@@ -30,7 +30,11 @@ Run
 ```
 python single_website.py <website link> <name of remarkable file>
 ```
+example
 
+```
+python single_website.py https://github.com/MperorM/website-to-remarkable github_page.pdf
+```
 # How can I set it up to run automatically each day?
 I like reading my remarkable papers in the morning before I touch my computer, using a chronjob you can set it up to run at certain times of day of your liking.
 
