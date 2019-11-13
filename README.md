@@ -1,5 +1,5 @@
 # website-to-remarkable
-A program for your remarkable tablet, that crawls selected websites for new articles and uploads them as pdf's to your remarkable tablet
+A program for your remarkable tablet, that crawls selected websites for new articles and uploads them as pdf's to your remarkable tablet. The program runs on macos and linux, windows is not supported.
 
 # Setup 
 The program makes use of [rmapi](https://github.com/juruen/rmapi) and requires rmapi to be set up in the same directory as the clone of this github.
