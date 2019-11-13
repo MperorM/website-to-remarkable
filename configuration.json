@@ -1,0 +1,30 @@
+{
+    "slatestarcodex":
+    {
+        "website_link": "https://slatestarcodex.com/archives/",
+        "post_links_xpath": "//div[@class = 'sya_postcontent']/a/@href",
+        "post_names_xpath": "//div[@class = 'sya_postcontent']/a/text()",
+        "files_to_upload": 3
+    },
+    "eaforum":
+    {
+        "website_link": "https://forum.effectivealtruism.org/allPosts?sortedBy=new",
+        "post_links_xpath": "//span[@class = 'PostsItem2-title']/a/@href",
+        "post_names_xpath": "//span[@class = 'PostsItem2-title']/a/span[1]/text()",
+        "files_to_upload": 3
+    },
+    "hackernews":
+    {
+        "website_link": "https://news.ycombinator.com",
+        "post_links_xpath": "//a[@class = 'storylink']/@href",
+        "post_names_xpath": "//a[@class = 'storylink']/text()",
+        "files_to_upload": 3
+    },
+    "euobserver":
+    {
+        "website_link": "https://euobserver.com/",
+        "post_links_xpath": "//h4[text() = 'Latest News']/following::ol/li/a/@href",
+        "post_names_xpath": "//h4[text() = 'Latest News']/following::ol/li/a/text()",
+        "files_to_upload": 5
+    }
+}
