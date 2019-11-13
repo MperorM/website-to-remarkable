@@ -52,5 +52,4 @@ def remove_article(folder, filename):
 
 
 def sanitize_file_name(filename):
-    filename = re.sub(r'\W+ ', '', filename)
-    return filename.replace(' ', '\\ ')
+    return re.sub(r'\W+', '', filename)
