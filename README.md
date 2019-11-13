@@ -36,7 +36,10 @@ cronjob -e
 in here add the following line:
 
 ```
-0 21 * * * cd <location of github clone> && /usr/local/bin/python3 main.py
+<minute of day> <hour of day> * * * cd <location of github clone> && <absolute python path> main.py
 ```
-
-This will cause the articles to be downloaded at 21:00 each night. To change it to some other time of your liking, replace the first zero with whichever minute of the day you want and the 21 with whichever hour.
+For example:
+```
+15 06 * * * cd ~/username/Desktop/website-to-remarkable && /usr/local/bin/python3 main.py
+```
+This will cause the articles to be downloaded at 06:15 each morning.
