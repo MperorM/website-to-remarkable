@@ -18,11 +18,18 @@ python main.py
 
 While the program is running you can turn on your remarkable and see the articles being added live.
 
-# How can I change to other websites?
+# How do I make it crawl other websites?
 
 To change the websites from which articles are downloaded, you must rewrite the [remarkable_spider.py](remarkable_spider.py) to trawl different websites.
 
 if you are unsure how to do this, write an issue with a request to add support for some website, and I will write it for you!
+
+# I just want to add a single website to my remarkable
+
+Run
+```
+python single_website.py <website link> <name of remarkable file>
+```
 
 # How can I set it up to run automatically each day?
 I like reading my remarkable papers in the morning before I touch my computer, using a chronjob you can set it up to run at certain times of day of your liking.
