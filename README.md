@@ -18,7 +18,7 @@ python main.py
 
 While the program is running you can turn on your remarkable and see the articles being added live.
 
-# How can I add other websites?
+# How can I change to other websites?
 
 To change the websites from which articles are downloaded, you must rewrite the [remarkable_spider.py](remarkable_spider.py) to trawl different websites.
 
