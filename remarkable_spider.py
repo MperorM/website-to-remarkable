@@ -27,7 +27,11 @@ class RemarkableSpider(scrapy.Spider):
             post_names = configuration[website]['post_names_xpath']
             post_names = response.xpath(post_names).extract()
             files_to_upload = configuration[website]['files_to_upload']
+            self.link_json[website] = []
             for i in range(0, files_to_upload):
-                self.link_json[website].append((post_links[i], rf.sanitize_file_name(post_names[i])))
+                if post_links[0][0] == '/':
+                    self.link_json[website].append((configuration[website]['raw_link'] + post_links[i], rf.sanitize_file_name(post_names[i])))
+                else:
+                    self.link_json[website].append((post_links[i], rf.sanitize_file_name(post_names[i])))
         with open('.links.json', 'w') as f:
             json.dump(self.link_json, f)

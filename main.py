@@ -11,7 +11,7 @@ try:
     with open('.links.json') as f:
         posts = json.load(f)
         for topic in posts:
-            for post in posts[topic]['new']:
+            for post in posts[topic]:
                 rf.remove_article(topic, post[1])
 except:
     pass
@@ -30,5 +30,5 @@ with open('.links.json') as f:
     for topic in posts:
         proc = subprocess.Popen([f'./rmapi mkdir {topic}'], stdout=subprocess.PIPE, shell=True)
         (out, err) = proc.communicate()
-        for post in posts[topic]['new']:
+        for post in posts[topic]:
             rf.create_and_upload_article(post[0], post[1], topic)
