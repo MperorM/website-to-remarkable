@@ -1,5 +1,5 @@
 # website-to-remarkable
-A program for your remarkable tablet, that crawls selected websites for new articles and uploads them as pdf's to your remarkable tablet. The program runs on macos and linux, windows is not supported.
+A program for your remarkable tablet, that scrapes selected websites for new articles and uploads them as pdf's to your remarkable tablet. The program runs on macos and linux, windows is not supported.
 
 # Setup 
 The program makes use of [rmapi](https://github.com/juruen/rmapi) and requires rmapi to be set up in the same directory as the clone of this github.
@@ -18,11 +18,11 @@ python main.py
 
 While the program is running you can turn on your remarkable and see the articles being added live.
 
-# How do I make it crawl other websites?
+# How do I make it scrape other websites?
 
-To change the websites from which articles are downloaded, you must rewrite the [remarkable_spider.py](remarkable_spider.py) to trawl different websites.
+To change the websites from which articles are downloaded, you must change the [configuration.json](configuration.json) file to include the website you want added, along with the xpath's that capture article links and names.
 
-if you are unsure how to do this, write an issue with a request to add support for some website, and I will write it for you!
+If you are unsure how to do this, write an issue with a request to add support for some website, and I will write it for you!
 
 # I just want to add a single website to my remarkable
 
