@@ -11,21 +11,9 @@ rmapi can be downloaded [here](https://github.com/juruen/rmapi/releases). Downlo
 ```
 and follow the instructions to get the program synced with your remarkable tablet.
 
-Once it is set up, all you need to do is run
-```
-python main.py
-```
+Once it is set up, all you are ready to go!
 
-While the program is running you can turn on your remarkable and see the articles being added live.
-
-# How do I make it scrape other websites?
-
-To change the websites from which articles are downloaded, you must change the [configuration.json](configuration.json) file to include the website you want added, along with the xpath's that capture article links and names.
-
-If you are unsure how to do this, write an issue with a request to add support for some website, and I will write it for you!
-
-# I just want to add a single website to my remarkable
-
+# Adding a single webpage
 Run
 ```
 python single_website.py <website link> <name of remarkable file>
@@ -35,6 +23,22 @@ example
 ```
 python single_website.py https://github.com/MperorM/website-to-remarkable github_page.pdf
 ```
+
+The link will now be converted to a pdf and uploaded to your remarkable!
+
+# Adding multiple articles from webpage
+Run
+```
+python main.py
+```
+While the program is running you can turn on your remarkable and see the articles being added live.
+
+# How do I make it scrape other websites?
+
+To change the websites from which articles are downloaded, you must change the [configuration.json](configuration.json) file to include the website you want added, along with the xpath's that capture article links and names.
+
+If you are unsure how to do this, write an issue with a request to add support for some website, and I will write it for you!
+
 # How can I set it up to run automatically each day?
 I like reading my remarkable papers in the morning before I touch my computer, using a chronjob you can set it up to run at certain times of day of your liking.
 
