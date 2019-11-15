@@ -11,7 +11,34 @@ rmapi can be downloaded [here](https://github.com/juruen/rmapi/releases). Downlo
 ```
 and follow the instructions to get the program synced with your remarkable tablet.
 
-Once it is set up, all you are ready to go!
+Then run
+```
+pip install -r requirements.txt 
+```
+this installs the required python packages.
+
+Last we must install wkhtmltopdf. This is system specific.
+
+## Macos
+Run
+```
+brew cask install wkhtmltopdf
+```
+If you do not have brew installed, you must first run
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+## Debian/ubuntu
+run
+```
+sudo apt-get install wkhtmltopdf
+```
+## Arch
+```
+sudo pacman -S wkhtmltopdf
+```
+
+You are now ready to go!
 
 # Adding a single webpage
 Run
