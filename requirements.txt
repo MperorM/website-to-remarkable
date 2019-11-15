@@ -1,1 +1,2 @@
 scrapy - 1.7
+pdfkit - 0.6
