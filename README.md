@@ -19,7 +19,7 @@ this installs the required python packages.
 
 Last we must install wkhtmltopdf. This is system specific.
 
-**Macos**
+#### Macos
 Run
 ```
 brew cask install wkhtmltopdf
@@ -28,12 +28,12 @@ If you do not have brew installed, you must first run
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-**Debian/ubuntu**
+#### Debian/ubuntu
 run
 ```
 sudo apt-get install wkhtmltopdf
 ```
-**Arch**
+#### Arch
 ```
 sudo pacman -S wkhtmltopdf
 ```
