@@ -26,7 +26,7 @@ python single_website.py https://github.com/MperorM/website-to-remarkable github
 
 The link will now be converted to a pdf and uploaded to your remarkable!
 
-# Adding multiple articles from webpage
+# Adding multiple articles from selected webpages
 Run
 ```
 python main.py
