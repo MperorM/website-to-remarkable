@@ -43,12 +43,12 @@ You are now ready to go!
 # Adding a single webpage
 Run
 ```
-python single_website.py <website link> <name of remarkable file>
+python3 single_website.py <website link> <name of remarkable file>
 ```
 example
 
 ```
-python single_website.py https://github.com/MperorM/website-to-remarkable github_page.pdf
+python3 single_website.py https://github.com/MperorM/website-to-remarkable github_page.pdf
 ```
 
 The link will now be converted to a pdf and uploaded to your remarkable!
@@ -56,7 +56,7 @@ The link will now be converted to a pdf and uploaded to your remarkable!
 # Adding multiple articles from selected webpages
 Run
 ```
-python main.py
+python3 main.py
 ```
 While the program is running you can turn on your remarkable and see the articles being added live.
 
