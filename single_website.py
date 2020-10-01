@@ -10,9 +10,11 @@ retval = rf.create_and_upload_article(sys.argv[1], sys.argv[2], '')
 
 if retval == 0:
     print('website successfully uploaded to remarkable')
-if retval == -1:
+elif retval == -1:
     print('failure, unable to create pdf of website')
-if retval == -2:
+elif retval == -2:
     print('failure, unable to upload file to remarkable')
-if retval == -3:
-    print('succesfully uploaded to remarkable, but failed to delete pdf from system, please delete pdf manually.')
+elif retval == -3:
+    print('succesfully uploaded to remarkable, but failed to delete pdf from system, please delete pdf manually.') 
+else : 
+    print ('nothing')
